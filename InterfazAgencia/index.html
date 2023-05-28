@@ -4,13 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Vacantes.css">
+    <link rel="stylesheet" type="text/css" href="Home.css">
     <link href="https://fonts.googleapis.com/css?family=Actor&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Vacantes de Empresa</title>
+    <title>Home</title>
   </head>
   <body>
     <header>
@@ -25,7 +25,6 @@
             <li><a href="/InterfazAgencia/Contactanos.html">Contactanos</a></li>
           </ul>
         </nav>
-
         <div class="header-buttons">
           <button type="button" class="login-button" data-bs-toggle="modal" data-bs-target="#loginModal">
             Iniciar Sesión
@@ -138,7 +137,8 @@
                         </div>
                       </div>
                     </div>
-                  </div>                               
+                  </div>
+                                                     
 
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerusuarioModal">USUARIO</button>
                   <div class="modal fade" id="registerusuarioModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
@@ -199,126 +199,57 @@
               </div>
             </div>
           </div>          
-        </div>          
+        </div>       
+
+  </header>
     </header>
 
-    <div class="filter-container">
-        <div class="filter-section">
-            <h2>Sección de Filtros</h2>
-            <input type="text" placeholder="Buscar...">
-            <select>
-                <option value="">Seleccionar País</option>
-                <option value="pais1">País 1</option>
-                <option value="pais2">País 2</option>
-                <option value="pais3">País 3</option>
-            </select>
-            <select>
-                <option value="">Seleccionar Ciudad</option>
-                <option value="ciudad1">Ciudad 1</option>
-                <option value="ciudad2">Ciudad 2</option>
-                <option value="ciudad3">Ciudad 3</option>
-            </select>
-            <select>
-                <option value="">Seleccionar Sede</option>
-                <option value="sede1">Sede 1</option>
-                <option value="sede2">Sede 2</option>
-                <option value="sede3">Sede 3</option>
-            </select>
-            <button>Filtrar Elementos</button>
-        </div>
-        
-                <div class="empresas-container">
-                    <h2 class="titulo-empresas">Vacantes</h2>
-                    <table class="table-responsive table table-bordered table caption-top table align-middle text-white" >
-                        <caption class="text-white">Listado de Vacantes</caption>
-                        <thead>
-                          <tr class ="Primarios">
-                            <th scope="col">#</th>
-                            <th scope="col">Profesion</th>
-                            <th scope="col">Ciudad y Pais</th>
-                            <th scope="col">Tipo de Contrato</th>
-                            <th scope="col">Fecha Inicio Convocatoria</th>
-                            <th scope="col">Fecha Final Convocatoria</th>
-                            <th scope="col">Empresa</th>
-                            <th scope="col">Estado</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Ingeniero de Sistemas</td>
-                            <td>Bogota - Colombia</td>
-                            <td>Indefinido - Tiempo Completo</td>
-                            <td>20/05/2023</td>
-                            <td>25/05/2023</td>
-                            <td>Endava</td>
-                            <td> <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#MasInfo">Mas informacion</button></td>
-                                <div class="modal fade" id="MasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                  <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-xl">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Informacion de la Vacante</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                     <p>
-                                        <h2 class="titulo-oferta">Oferta de Empleo: Ingeniero en Sistemas</h2>
-                                        <h3 class="cargo">Cargo a Desempeñar:</h3>
-                                        <p class="descripcion-cargo">Estamos buscando un Ingeniero en Sistemas altamente capacitado para unirse a nuestro equipo de desarrollo de software. Serás responsable de diseñar, desarrollar y mantener soluciones tecnológicas eficientes, así como colaborar en la resolución de problemas técnicos y participar en el análisis de requerimientos.</p>
-                                        <h3 class="perfil-aspirante">Perfil del Aspirante:</h3>
-                                        <ul class="perfil-lista">
-                                          <li>Titulación en Ingeniería en Sistemas o carreras afines.</li>
-                                          <li>Experiencia previa en el desarrollo de software, preferiblemente en entornos empresariales.</li>
-                                          <li>Conocimientos sólidos en lenguajes de programación como Java, C# o Python.</li>
-                                          <li>Capacidad para trabajar en equipo, comunicarse de manera efectiva y resolver problemas de forma creativa.</li>
-                                          <li>Habilidades de análisis y resolución de incidencias.</li>
-                                        </ul>
-                                        <h3 class="requisitos">Requisitos para Optar:</h3>
-                                        <ul class="requisitos-lista">
-                                          <li>Experiencia mínima de 3 años en desarrollo de software.</li>
-                                          <li>Dominio avanzado del idioma inglés.</li>
-                                          <li>Conocimientos en bases de datos relacionales y consultas SQL.</li>
-                                          <li>Capacidad para adaptarse a entornos dinámicos y trabajar bajo presión.</li>
-                                        </ul>
-                                        <p class="descripcion-puesto">Esta posición te brindará la oportunidad de formar parte de un equipo altamente calificado, donde podrás desarrollar soluciones innovadoras y contribuir al crecimiento de la empresa en el ámbito tecnológico. Ofrecemos un ambiente de trabajo dinámico, beneficios competitivos y oportunidades de crecimiento profesional.</p>
-                                        <h3 class="tipo-convocatoria">Tipo de Convocatoria:</h3>
-                                        <p class="descripcion-convocatoria">La convocatoria es abierta a candidatos internos y externos. Los interesados deben enviar su hoja de vida y carta de presentación a empleos@empresa.com indicando en el asunto "Ingeniero en Sistemas - Convocatoria".</p>
-                                     </p> 
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                      <button type="button" class="btn btn-primary">Aplicar</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>                                               
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Ingeniero de Sistemas</td>
-                            <td>Bogota - Colombia</td>
-                            <td>Indefinido - Tiempo Completo</td>
-                            <td>20/05/2023</td>
-                            <td>25/05/2023</td>
-                            <td>Tecnology</td>
-                            <td><button type="button" class="btn btn-link">Mas informacion</button></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Ingeniero de Sistemas</td>
-                            <td>Bogota - Colombia</td>
-                            <td>Indefinido - Tiempo Completo</td>
-                            <td>20/05/2023</td>
-                            <td>25/05/2023</td>
-                            <td>Lalo</td>
-                            <td><button type="button" class="btn btn-link">Mas informacion</button></td>
-                          </tr>
-                        </tbody>
-                      </table>
+    <div class="carrusel-container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/Mision.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Mision</h5>
+                  <p class="text-dark">Nuestra misión es facilitar el acceso al empleo digno y de calidad para todos los habitantes de Bogotá, promoviendo la inclusión laboral, la equidad y el desarrollo económico sostenible en la ciudad. A través de nuestra amplia red de servicios y recursos, trabajamos de la mano con empleadores y buscadores de empleo para generar oportunidades laborales, brindando orientación, formación y asesoramiento personalizado que se adapte a las necesidades de cada individuo. </p>
                 </div>
-        </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/Vision.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Vision</h5>
+                  <p class="text-dark">Nuestra visión es ser reconocidos como la principal entidad de referencia en materia de empleo en Bogotá, liderando la innovación y la excelencia en la intermediación laboral.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/Objetivo.jpg" class="d-block w-100" alt="Objetivo">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Objetivo</h5>
+                  <p class="text-dark">Nuestro objetivo principal es reducir el desempleo y promover la empleabilidad en Bogotá, conectando de manera efectiva a los buscadores de empleo con oportunidades laborales acordes a sus habilidades y necesidades. Trabajamos para fomentar la capacitación y formación de los candidatos, brindando programas de desarrollo profesional y orientación laboral que les permitan mejorar sus habilidades y competencias. Además, nos esforzamos por establecer alianzas estratégicas con empresas y empleadores de la ciudad, para facilitar la creación de empleo y generar un mercado laboral más inclusivo y dinámico.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
     </div>
     
+    <div class="titulo-container">
+        <h1 class="Agencia">AGENCIA DE EMPLEOS DE BOGOTA</h1>
+    </div>
+
+    
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

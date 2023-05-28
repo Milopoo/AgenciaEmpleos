@@ -19,10 +19,10 @@
         </div>
         <nav>
           <ul>
-            <li><a href="/Home.html">Home</a></li>
-            <li><a href="/Empresas.html">Empresas</a></li>
-            <li><a href="/Vacantes.html">Vacantes</a></li>
-            <li><a href="/Contactanos.html">Contactanos</a></li>
+            <li><a href="/InterfazAgencia/index.html">Home</a></li>
+            <li><a href="/InterfazAgencia/Empresas.html">Empresas</a></li>
+            <li><a href="/InterfazAgencia/Vacantes.html">Vacantes</a></li>
+            <li><a href="/InterfazAgencia/Contactanos.html">Contactanos</a></li>
           </ul>
         </nav>
         <div class="header-buttons">
@@ -62,79 +62,143 @@
           <button type="button" class="register-button" data-bs-toggle="modal" data-bs-target="#registerModal">
             Registrarse
           </button>
-        
           <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="registerModalLabel">Registrarse</h5>
+                  <h5 class="modal-title" id="registerModalLabel">Registro</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Nombre Completo:</label>
-                      <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="mb-3">
-                      <label for="recipient-email" class="col-form-label">Correo Electrónico:</label>
-                      <input type="text" class="form-control" id="recipient-email">
-                    </div>
-                    <div class="mb-3">
-                      <label for="recipient-password" class="col-form-label">Contraseña:</label>
-                      <input type="password" class="form-control" id="recipient-password">
-                    </div>
-                    <div class="mb-3">
-                      <label for="recipient-telefono" class="col-form-label">Teléfono:</label>
-                      <input type="text" class="form-control" id="recipient-telefono">
-                    </div>
-                    <div class="mb-3">
-                      <label for="recipient-pais" class="col-form-label">País:</label>
-                      <input type="text" class="form-control" id="recipient-pais">
-                    </div>
-                    <div class="mb-3">
-                      <label for="recipient-ciudad" class="col-form-label">Ciudad:</label>
-                      <input type="text" class="form-control" id="recipient-ciudad">
-                    </div>
-                    <div class="mb-3">
-                      <label for="recipient-direccion" class="col-form-label">Dirección:</label>
-                      <input type="text" class="form-control" id="recipient-direccion">
-                    </div>
-                    <div class="mb-3">
-                      <p>Seleccione la opción que desea:</p>
-                      <p>Si desea registrar su empresa con la agencia, elija la opción EMPRESA.</p>
-                      <p>Si desea aplicar a alguna vacante de empleo en la agencia, elija la opción USUARIO.</p>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="seleccion-empresa">
-                        <label class="form-check-label" for="seleccion-empresa">
-                          EMPRESA
-                        </label>
+                  <p>Seleccione la dependencia que desea</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerempresaModal">EMPRESA</button>
+                  <div class="modal fade" id="registerempresaModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-lg modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="registerModalLabel">Registrarse</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Nombre Completo:</label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-email" class="col-form-label">Correo Electrónico:</label>
+                              <input type="email" class="form-control" id="recipient-email">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-password" class="col-form-label">Contraseña:</label>
+                              <input type="password" class="form-control" id="recipient-password">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-telefono" class="col-form-label">Teléfono:</label>
+                              <input type="tel" class="form-control" id="recipient-telefono">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-pais" class="col-form-label">País:</label>
+                              <input type="text" class="form-control" id="recipient-pais">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-ciudad" class="col-form-label">Ciudad:</label>
+                              <input type="text" class="form-control" id="recipient-ciudad">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-direccion" class="col-form-label">Dirección:</label>
+                              <input type="text" class="form-control" id="recipient-direccion">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-empresa" class="col-form-label">Nombre de la Empresa:</label>
+                              <input type="text" class="form-control" id="recipient-empresa">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-nit" class="col-form-label">NIT:</label>
+                              <input type="text" class="form-control" id="recipient-nit">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-representante" class="col-form-label">Representante Legal:</label>
+                              <input type="text" class="form-control" id="recipient-representante">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-razon-social" class="col-form-label">Razon Social:</label>
+                              <input type="text" class="form-control" id="recipient-razon-social">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-sede-principal" class="col-form-label">Sede Sucursal Principal:</label>
+                              <input type="text" class="form-control" id="recipient-sede-principal">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Guardar Elementos</button>
+                          <button type="button" class="btn btn-primary">Registrarse y Finalizar</button>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="seleccion-usuario" checked>
-                        <label class="form-check-label" for="seleccion-usuario">
-                          USUARIO
-                        </label>
+                    </div>
+                  </div>                               
+
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerusuarioModal">USUARIO</button>
+                  <div class="modal fade" id="registerusuarioModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-lg modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="registerModalLabel">Registrarse</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Nombre Completo:</label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-email" class="col-form-label">Correo Electrónico:</label>
+                              <input type="email" class="form-control" id="recipient-email">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-password" class="col-form-label">Contraseña:</label>
+                              <input type="password" class="form-control" id="recipient-password">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-telefono" class="col-form-label">Teléfono:</label>
+                              <input type="tel" class="form-control" id="recipient-telefono">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-pais" class="col-form-label">País:</label>
+                              <input type="text" class="form-control" id="recipient-pais">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-ciudad" class="col-form-label">Ciudad:</label>
+                              <input type="text" class="form-control" id="recipient-ciudad">
+                            </div>
+                            <div class="mb-3">
+                              <label for="recipient-direccion" class="col-form-label">Dirección:</label>
+                              <input type="text" class="form-control" id="recipient-direccion">
+                            </div>
+                            <div class="mb-3">
+                              <p>Cargue su hoja de vida en formato PDF:</p>
+                              <input type="file" id="pdf-file" name="pdf-file" accept=".pdf">
+                            </div>
+                            <div class="mb-3">
+                              <p>Cargue su presentación en formato MP4:</p>
+                              <input type="file" id="video-file" name="video-file" accept=".mp4">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Guardar Elementos</button>
+                          <button type="button" class="btn btn-primary">Registrarse y Finalizar</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="mb-3">
-                      <p>Cargue su hoja de vida en formato PDF:</p>
-                      <input type="file" id="pdf-file" name="pdf-file" accept=".pdf">
-                    </div>
-                    <div class="mb-3">
-                      <p>Cargue su presentación en formato MP4:</p>
-                      <input type="file" id="video-file" name="video-file" accept=".mp4">
-                    </div>
-                  </form>
-                  <button type="button" class="btn btn-primary">Guardar Elementos</button>
-                  <button type="button" class="btn btn-primary">Registrarse y Finalizar</button>
-                </div>
-                <div class="modal-footer">
+                  </div>                  
                 </div>
               </div>
             </div>
-          </div>
-        </div>           
+          </div>          
+        </div>          
   </header>
     </header>
 
@@ -192,7 +256,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Endava</h5>
                               <p class="card-text">Endava es una empresa global de servicios de tecnología de la información y consultoría. Con sede en Londres y presencia en varios países, incluyendo Colombia, se especializa en brindar soluciones digitales innovadoras a través de la combinación de tecnología, diseño y estrategia empresarial. Endava trabaja en estrecha colaboración con sus clientes para ayudarles a alcanzar sus objetivos comerciales y transformarse digitalmente. Sus servicios abarcan desde el desarrollo de software y aplicaciones móviles hasta la implementación de soluciones en la nube, la inteligencia artificial y la analítica de datos. Con un enfoque en la excelencia técnica y la entrega ágil, Endava se ha ganado una reputación por su capacidad para ofrecer soluciones de alta calidad y alto valor para sus clientes en diferentes industrias.</p>
-                              <a href="/VacantesdeEmpresa.html" class="btn btn-primary">Vacantes de Empleo</a>
+                              <a href="/InterfazAgencia/VacantesdeEmpresa.html" class="btn btn-primary">Vacantes de Empleo</a>
                             </div>
                           </div>
                         </div>
