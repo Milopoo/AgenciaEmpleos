@@ -1,0 +1,186 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4d25aa, #7947d4, #9b77ff, #3dddd5);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(135deg, #4d25aa, #7947d4, #9b77ff, #3dddd5);
+}
+
+.logo-container {
+    margin-right: 10px;
+    scale: 0.8px;
+}
+
+
+.logo-container img {
+    width: 70px;
+    height: 70px;
+    scale: 0.8px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Actor', sans-serif;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    user-select: text;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.login-button{
+    background-color: rgb(142, 70, 175);
+    border-radius: 5px;
+    color:white;
+    font-family: 'Actor', sans-serif;
+    padding: 10px;
+}
+
+.register-button{
+    background-color: rgb(83, 38, 136);
+    border-radius: 5px;
+    color:white;
+    font-family: 'Actor', sans-serif;
+    padding: 10px;
+}
+
+/* Estilos para el contenedor de filtros y empresas */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.filter-section {
+    width: 300px;
+    padding: 40px;
+    background-color: #18085f;
+    border-radius: 20px;
+}
+
+.filter-section h2 {
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.filter-section input,
+.filter-section select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.filter-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7c3ec4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.filter-section button:hover {
+    background-color: #cf1b1b;
+}
+
+.empresas-container {
+    width: calc(100% - 320px);
+    padding: 40px;
+    background-color: #18085f;
+    border-radius: 10px;
+}
+
+.empresas-container .titulo-empresas {
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.Primarios{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #27ac54;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .Eliminar{
+    padding: 10px 20px;
+    background-color: #c0311e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .Modificar{
+    padding: 10px 20px;
+    background-color: #c0b51e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+}

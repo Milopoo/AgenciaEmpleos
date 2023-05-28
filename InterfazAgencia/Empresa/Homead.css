@@ -1,0 +1,122 @@
+/* Estilos para el encabezado */
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4d25aa, #7947d4, #9b77ff, #3dddd5);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(135deg, #4d25aa, #7947d4, #9b77ff, #3dddd5);
+}
+
+.logo-container {
+    margin-right: 10px;
+    scale: 0.8px;
+}
+
+
+.logo-container img {
+    width: 70px;
+    height: 70px;
+    scale: 0.8px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Actor', sans-serif;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    user-select: text;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.login-button{
+    background-color: rgb(142, 70, 175);
+    border-radius: 5px;
+    color:white;
+    font-family: 'Actor', sans-serif;
+    padding: 10px;
+}
+
+.register-button{
+    background-color: rgb(83, 38, 136);
+    border-radius: 5px;
+    color:white;
+    font-family: 'Actor', sans-serif;
+    padding: 10px;
+}
+
+.carrusel-container {
+    max-width: 50%;
+    margin-left: 25px;
+    margin: 100px;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.titulo-container{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 700px;
+    height: 690px;
+    left: 750px;
+    top: 45px;
+    transform: scale(0.5);
+}
+
+.titulo-container{
+display: flex;
+width: 68%;
+height: 65%;
+}
+
+.Agencia{
+    display: flex;
+    margin-top: 30%;
+    font-size: 150px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Actor', sans-serif;
+    letter-spacing: 10px;
+    padding: 80px;
+    font-weight: bold;
+}
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+}
